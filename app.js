@@ -1,7 +1,7 @@
 const app = new Vue({
   el: "#app",
   data: {
-    title: "Alguns repositórios públicos do GitHub",
+    title: "Leonardo Barreto",
     showTitle: true,
     items: [],
     username: "lapbufam",

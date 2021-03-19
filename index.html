@@ -16,26 +16,7 @@
   <body>
     <div class="container my-3">
       <div id="app">
-        <h1 v-if="showTitle">{{title}}</h1>
-        <form v-on:submit.prevent>
-          <div class="row g-2">
-            <div class="form-group col-4">
-              <label for="username">Usuário</label>
-              <input
-                type="text"
-                class="form-control"
-                v-model="username"
-                id="username"
-                v-on:keydown.enter="getRepos"
-              />
-            </div>
-            <div class="form-group">
-              <button type="button" class="btn btn-primary">
-                Buscar repositórios
-              </button>
-            </div>
-          </div>
-        </form>
+        <h1 class="text-center" v-if="showTitle">{{title}}</h1>
         <div class="card-group mt-3">
           <div class="row row-cols-4 g-2">
             <div class="col" v-for="item in items">
